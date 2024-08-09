@@ -18,12 +18,12 @@
             porcheBuilder.SetBrand("Porche");
             porcheBuilder.SetName("911");
             porcheBuilder.SetPrice(114400);
-            porcheBuilder.SetEngine("3.6L 6기통");
+            porcheBuilder.SetEngine("3.6 L 6cyl");
             porcheBuilder.SetHorsePower("388 to 478 hp");
             porcheBuilder.SetTransmission("7 & 8-speed automatic");
             porcheBuilder.SetZeroSixty(3.50d);
             Car car0 = porcheBuilder.Build();
-            Console.WriteLine($"{car0.year} {car0.brand} {car0.name}, 가격:${car0.price}, 엔진:{car0.engine}, 마력:{car0.horsePower}, 변속기:{car0.transmission}, 제로백:{car0.zeroSixty}");
+            Console.WriteLine($"{car0.year} {car0.brand,14} {car0.name,10}, 가격:${car0.price,7}, 엔진:{car0.engine,12}, 마력:{car0.horsePower,14}, 변속기:{car0.transmission,22}, 제로백:{car0.zeroSixty,6}");
 
 
             CarBuilder lamboBuilder = new CarBuilder();
@@ -31,7 +31,7 @@
             CarBuilder genesisBuilder = new CarBuilder();
             genesisBuilder.SetYear(2024).SetBrand("Genesis").SetName("GV80").SetPrice(64850).SetEngine("3.5 L V6").SetHorsePower("300 to 375 hp").SetTransmission("8-speed automatic").SetZeroSixty(6.10d);
             CarBuilder bmwBuilder = new CarBuilder();
-            bmwBuilder.SetYear(2024).SetBrand("BMW").SetName("M4").SetPrice(78100).SetEngine("3.0 L 6기통").SetHorsePower("473 to 503 hp").SetTransmission("8-speed automatic").SetZeroSixty(3.80d);
+            bmwBuilder.SetYear(2024).SetBrand("BMW").SetName("M4").SetPrice(78100).SetEngine("3.0 L 6cyl").SetHorsePower("473 to 503 hp").SetTransmission("8-speed automatic").SetZeroSixty(3.80d);
             CarBuilder mercedesBuilder = new CarBuilder();
             mercedesBuilder.SetYear(2024).SetBrand("Mercedes-Benz").SetName("AMG GT").SetPrice(134900).SetEngine("4.0 L V8").SetHorsePower("577 hp").SetTransmission("9-speed automatic").SetZeroSixty(3.10d);
             CarBuilder mcLarenBuilder = new CarBuilder();
@@ -48,7 +48,7 @@
             for (int i = 0; i < cars.Length; i++)
             {
                 //Console.WriteLine($"{i}번 자동차: ");
-                Console.WriteLine($"{cars[i].year} {cars[i].brand} {cars[i].name}, 가격:${cars[i].price}, 엔진:{cars[i].engine}, 마력:{cars[i].horsePower}, 변속기:{cars[i].transmission}, 제로백:{cars[i].zeroSixty}");
+                Console.WriteLine($"{cars[i].year} {cars[i].brand,14} {cars[i].name,10}, 가격:${cars[i].price,7}, 엔진:{cars[i].engine,12}, 마력:{cars[i].horsePower,14}, 변속기:{cars[i].transmission,22}, 제로백:{cars[i].zeroSixty,6}");
             }
 
 
