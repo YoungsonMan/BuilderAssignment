@@ -39,6 +39,12 @@ Laguage used - C#
 
 ![BuilderPattern00](https://github.com/user-attachments/assets/dab8bdd4-c848-424e-96c5-d62e271c33ca)
 
+24-08-09 업데이트
+
+![BuilderPattern11](https://github.com/user-attachments/assets/4f8887be-5cc2-4637-b918-81ddfc54853f)
+
+
+
 
 ## Comments
 
@@ -51,3 +57,12 @@ Laguage used - C#
 그렇지만 마지막 부분에 프린트 하는 과정에 Array에 forloop에서 \t을 써서 string들을 띄었는데 문자열들이 길이가 다 달라서 오히려 더 이쁘게 프린트가 되지 않았다. 
 
 어떻게 이쁘게 정렬이 되어서 출력할 수 있을까.
+
+24-08-09 업데이트
+
+문자열 보간 
+
+밑에처럼 ',' 코마 문자 띄울만큼 입력해서 \t말고 다르게 띄어 쓸 수 있다. 
+```
+Console.WriteLine($"{cars[i].year} {cars[i].brand,14} {cars[i].name,10}, 가격:${cars[i].price,10}, 엔진:{cars[i].engine,10}, 마력:{cars[i].horsePower,14}, 변속기:{cars[i].transmission,22}, 제로백:{cars[i].zeroSixty,6}");
+```
